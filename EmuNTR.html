@@ -134,15 +134,16 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1 id="about" class="title text-center"><span>前言</span></h1>
-						<p class="lead text-center">这篇教程是给使用A9破解和NTR内录但是升级了11.4的朋友看的。通过这篇教程，你会制造出一个11.3的虚拟系统用来实现NTR的视频传输。完成教程后，你可以拥有其中一种：按住L开机进虚拟11.3系统、不按L进真实系统的一张sd卡；或者直接开虚拟11.3的副sd卡+和原来完全一样的主sd卡（也就是说你制作了一张NTR内录专用sd卡）。</p>
+						<p class="lead text-center">这篇教程是给使用A9破解和NTR内录但是升级了11.4的朋友看的。通过这篇教程，你会制造出一个11.3的虚拟系统用来实现NTR的视频传输。完成教程后，你可以拥有其中一种：按住L开机进虚拟11.3系统、不按L进真实系统的一张sd卡；或者直接开虚拟11.3的副sd卡+和原来完全一样的主sd卡（也就是说你制作了一张NTR内录专用sd卡）。如图所示：</p>
+						<p><img src='images/picCN.png' align="middle"></p>
 						<div class="space"></div>
 						<div class="row">
 							<h2 id="step1" class="title text-center"><span>一，材料（二选一）</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 现在用着的sd卡，从第六步开始简称“主卡”，建议32G以上，安装很多游戏的话最好64G以上；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 或者多出的一张sd卡，从第六步开始简称“副卡”【强烈推荐使用这种，因为一般买机子时会自带一张4gb卡，a9后就没用了，这里可以废物利用一下。然后就是这种方法更快捷，用原卡要复制粘贴原来的东西，太麻烦】;</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 现在用着的sd卡，后面简称“主卡”，建议32G以上，安装很多游戏的话最好64G以上；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 或者多出的一张sd卡，后面简称“副卡”【强烈推荐使用这种，因为一般买机子时会自带一张4gb卡，a9后就没用了，这里可以废物利用一下。然后就是这种方法更快捷，用原卡要复制粘贴原来的东西，太麻烦】;</li>
 								</ul>
 							</div>
 						</div>
@@ -164,7 +165,7 @@
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的Decrypt9WIP.bin到sd卡中的luma/payloads/文件夹；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的<b>Decrypt9WIP.bin</b>>到sd卡中的luma/payloads/文件夹；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. sd卡插回3ds，按住START开机，进入Chainloader，选择Decrypt9WIP按A进入</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 进入Decrypt9WIP后，选择Ticket/Titlekey Options按A进入；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 选择Ticket Dump (SysNAND)按A，然后等待它完成，按电源键关机; </li>
@@ -191,7 +192,7 @@
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将要制作虚拟系统的sd卡插到电脑（另一张卡建议拔出）；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 点inject emuNAND，选中第二步里下载的11.3_J_EmuNAND.7z中的11.3_J_EmuNAND.bin，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 读条完毕成功后，将主卡或主卡备份中3ds文件夹，luma文件夹，arm9loaderhax.bin， boot.3dsx，全部复制到根目录，拔sd卡插回3ds；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 读条完毕成功后，将主卡或主卡备份中的<b>3ds</b>文件夹，<b>luma</b>文件夹，<b>arm9loaderhax.bin</b>， <b>boot.3dsx</b>，全部复制到根目录，拔sd卡插回3ds；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 5. 如果是想要开机默认虚拟系统，开机按住SELECT，将Autoboot SysNAND取消勾选，然后按START保存;</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 6. 如果是使用了主卡做虚拟系统，就将前面备份的东西全部复制到主卡上；</li>
 									
@@ -217,6 +218,8 @@
 							<h2 id="step1" class="title text-center"><span>七，完成！收尾</span></h2>
 							<div class="col-md-12">
 								<p>恭喜你已经成功制作了11.3的虚拟系统，接下来你可以安装用FBI安装DevMenu.cia和SaveDataFile.cia，可以安装NTR和游戏，导入存档。然后，你可以安装NTRSelector.cia或者用你的老办法来运行NTR内录。</p>
+								<p>那个Mii形象是这个系统原主人的，记得改掉。</p>
+								<p>如果觉得用别人的虚拟系统不舒服，可以进虚拟系统后初始化机子，然后用Decrypt9WIP给虚拟系统注入FBI即可。
 								<p>祝大家游戏愉快！</p>
 								<p>转载请注明作者和出处。</p>
 							</div>
