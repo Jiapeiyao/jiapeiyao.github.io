@@ -119,8 +119,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-							<h1 class="text-center">The Renaissance of EmuNAND<span>Good News to the Users of the NTR Streaming</span></h1>
-							<p class="lead text-center">Tutorial of making a 11.3 EmuNAND to implememt NTR streaming, as long as using new updated SysNAND</p>
+							<h1 class="text-center">The Renaissance of EmuNAND<br /><span>Good News to the Users of NTR Streaming</span></h1>
+							<p class="lead text-center">Tutorial of making a 11.3 EmuNAND for NTR streaming, as long as using the updated SysNAND</p>
 						</div>
 					</div>
 				</div>
@@ -134,69 +134,81 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 id="about" class="title text-center"><span>前言</span></h1>
-						<p class="lead text-center">If you find this tutorial, you probably are a A9lh and NTR streaming user who has updated the 3ds system to 11.4, which is not able to run NTR streaming. This tutorial will guide you to create a 11.3 EmuNAND for the NTR streaming. You have 2 options: first, you can use one card for both daily online game and booting EmuNAND while holding L to use NTR streaming; or second, you can .：</p>
-						<p><img src='images/picCN.png' align="middle"></p>
+						<h1 id="about" class="title text-center"><span>Preface</span></h1>
+						<p class="lead text-center">If you find this tutorial, you probably are a A9lh and NTR streaming user who has updated the 3ds system to 11.4, which is not able to run NTR streaming. This tutorial will guide you to create a 11.3 EmuNAND for the NTR streaming. You have 2 options: first, you can use one SD card for both daily online game and booting EmuNAND while L; or second, you can use the SD card you are using as usual but use another card for 11.3 EmuNAND. You can see the picture below：</p>
+						<p><img src='images/picEN.png' align="middle"></p>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>一，材料（二选一）</span></h2>
+							<h2 id="step1" class="title text-center"><span>I, Preparation</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 现在用着的sd卡，后面简称“主卡”，建议32G以上，安装很多游戏的话最好64G以上；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 或者多出的一张sd卡，后面简称“副卡”【强烈推荐不经常使用内录的这种方法。就是这种方法更快捷，用原卡要复制粘贴原来的东西，太麻烦。缺点是以后录游戏的时候得导出导入存档】;</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. Make a decision on which option: <p>(1) Option 1: you only use one card (gonna call it "Main Card" for short), if you install lots of game, it'd better be 64GB;</p><p>(2) Option 2: you use another SD card (gonna call it "Vice Card" for short). The advantage is that you don't need to change the Main Card. Yet, the disadvantage is that later you may need to copy your game saves often. </p> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. Make sure you are suitable for this tutorial: (1) Are your 3ds a9lh? If no, sorry, please go to https://3ds.guide/ and do a9lh; (2) Has your 3DS already had some EmuNAND? If No, congrat and do the whole tutorial manually. If Yes, (3) Are you using the SysNAND and installing your games and softwares while using the SysNAND? If yes, continue to the tutorial. If No, sorry this tutorial is not suitable, but it can help you if you understand what's going on. e.g. You can consider directly transfer CTRNAND to your SysNAND. </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. I recommand you to dump all the savedata and extdata of your games; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. Keep plugging in the power;
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>二，下载需要的文件</span></h2>
+							<h2 id="step1" class="title text-center"><span>II, Download required stuffs</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Decrypt9WIP-20170225-132313.zip，或者到此网址下载最新版： <a href="https://github.com/d0k3/Decrypt9WIP/releases">https://github.com/d0k3/Decrypt9WIP/releases</a></li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3ds-multinand_v1.61.zip，链接: <a href="https://pan.baidu.com/s/1qYlVGFa">https://pan.baidu.com/s/1qYlVGFa</a> 密码: 57k4</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 11.3_J_EmuNAND.7z, （暂时只制作了日版）: <a href="https://pan.baidu.com/s/1o84qE5W">https://pan.baidu.com/s/1o84qE5W</a> 密码: c17e</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> <a href="https://github.com/d0k3/Decrypt9WIP/releases/download/20170225/Decrypt9WIP-20170225-132313.zip">Decrypt9WIP.zip</a>，or newest version： <a href="https://github.com/d0k3/Decrypt9WIP/releases">https://github.com/d0k3/Decrypt9WIP/releases</a></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3ds-multinand_v1.61.zip: <a href="https://pan.baidu.com/s/1qYlVGFa">https://pan.baidu.com/s/1qYlVGFa</a> key: 57k4</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> <a href="https://github.com/d0k3/EmuNAND9/releases/download/20160919/EmuNAND9-20160919-134904.zip">EmuNAND9.zip</a>，or newest version：<a href="https://github.com/d0k3/EmuNAND9/releases">https://github.com/d0k3/EmuNAND9/releases</a>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 11.3.0-36[J|U|E]_ctrtransfer_n3ds.7z： <a href="https://pan.baidu.com/s/1slfie9v">J=Japan</a> key: rwh2;  <a href="https://pan.baidu.com/s/1geDcnf1">U=USA</a> key: 2gtu； <a href="https://pan.baidu.com/s/1eSxfznc">E=European</a> key: bd5k;</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> guiformat.zip: <a href="https://pan.baidu.com/s/1jIcE6JO">https://pan.baidu.com/s/1jIcE6JO</a> key: pgf2</a></li>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>III, Backup Tickets</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. take the SD card from your 3ds and plug in your PC, copy <code class="highlighter-rouge">Decrypt9WIP.bin</code> from Decrypt9WIP.zip and <code class="highlighter-rouge">EmuNAND9.bin</code> from EmuNAND9.zip, to <code class="highlighter-rouge">luma/payloads/</code></li> in your SD card;
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. plug the SD card in 3ds, hold START and startup; it must enter Chainloader, select Decrypt9WIP and press A; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. After entering Decrypt9WIP, select "Ticket/Titlekey Options" and press A; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. Select "Ticket Dump (SysNAND)" and press A; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>三，备份Ticket</span></h2>
+							<h2 id="step1" class="title text-center"><span>IV, IMPORTANT! Backup all your files</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的<b>Decrypt9WIP.bin</b>>到sd卡中的luma/payloads/文件夹；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. sd卡插回3ds，按住START开机，进入Chainloader，选择Decrypt9WIP按A进入</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 进入Decrypt9WIP后，选择Ticket/Titlekey Options按A进入；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 选择Ticket Dump (SysNAND)按A，然后等待它完成，按电源键关机; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. take your Main Card and plugin your PC; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. Copy all the stuffs in your SD card (make sure you don't have hidden files); </li>
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>四，重要！备份主卡文件（做副卡虚拟系统的可跳过）</span></h2>
+							<h2 id="step1" class="title text-center"><span>V，Clone SysNAND</span></h2>
 							<div class="col-md-12">
-								<p></p>
+								<p>Note：you are going to switch to the card that you are going install 11.3 EmuNAND. If you choose Option 2, use your Vice from now on. </p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 取出sd卡插入电脑（不建议使用wifi传输）；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 将sd卡所有内容复制到电脑里保管好。（为了防止有疏漏的文件，建议先将系统的不显示隐藏文件选项给关掉）；</li>
-								</ul>
-							</div>
-						</div>
-						<div class="space"></div>
-						<div class="row">
-							<h2 id="step1" class="title text-center"><span>五，注入虚拟系统</span></h2>
-							<div class="col-md-12">
-								<p></p>
-								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将要制作虚拟系统的sd卡插到电脑（另一张卡建议拔出）；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe（如果你的卡不是FAT32）；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 点inject emuNAND，选中第二步里下载的11.3_J_EmuNAND.7z中的11.3_J_EmuNAND.bin，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 读条完毕成功后，将主卡或主卡备份中的<b>3ds</b>文件夹，<b>luma</b>文件夹，<b>arm9loaderhax.bin</b>， <b>boot.3dsx</b>，全部复制到根目录，拔sd卡插回3ds；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 5. 如果是想要开机默认虚拟系统，开机按住SELECT，将Autoboot SysNAND取消勾选，然后按START保存;</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 6. 打开虚拟系统，打开系统设置（右下角会写着Emu 11.3...），点右下的其它设定，点最右边的本体初始化，初始化虚拟系统；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 7. 如果是使用了主卡做虚拟系统，就将前面备份的东西全部复制到主卡上；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. Copy <code class="highlighter-rouge">boot.3dsx</code>, <code class="highlighter-rouge">arm9loaderhax.bin</code>, and <code class="highlighter-rouge">luma</code></li>folder to the SD card, (if they don't exist in your card), plug you card in 3ds, then hold START and startup, select EmuNAND9 and press A;
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
 								</ul>
 							</div>
 						</div>
@@ -206,10 +218,19 @@
 							<div class="col-md-12">
 								<p>如果虚拟系统需要还原原来装过的一堆软件和游戏的话，就做这一环节。（如果是使用小容量副卡就不需要这一步了，建议只装自己需要的软件和游戏）</p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将主卡的备份中的Nintendo 3ds文件复制回sd卡根目录</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 开机后打开主页的FBI</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 选择SD卡按A，可以看见一堆*.tik文件；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 按Y，选择Install and delete all tickets，按A确定安装，然后按B取消从CDN安装titles；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> </li>
+
 								</ul>
 							</div>
 						</div>
