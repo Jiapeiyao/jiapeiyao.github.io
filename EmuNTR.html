@@ -134,7 +134,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1 id="about" class="title text-center"><span>前言</span></h1>
-						<p class="lead text-center">这篇教程是给使用A9破解和NTR内录但是升级了11.4的朋友看的。通过这篇教程，你会制造出一个11.3的虚拟系统用来实现NTR的视频传输。完成教程后，你可以拥有一种方案：1，按住L开机进虚拟11.3系统、不按L进真实系统的一张sd卡；或者2，直接开虚拟11.3的副sd卡+和原来完全一样的主sd卡（也就是说你额外制作了一张NTR内录专用sd卡）。如图所示：</p>
+						<p class="lead text-center"><p><b>NTR已经更新可以兼容内录！</b>但是你依然可以使用本教程安装虚拟系统（跳过《传输11.3系统到虚拟系统中》），以免以后再次出现一些破解功能跟新系统不兼容的担忧。如果你可以跳过《传输11.3系统到虚拟系统中》做完这篇教程你将制作出一个跟真实系统同样版本的虚拟系统，以后可以将他们分开来升级。</p>这篇教程是给使用A9破解和NTR内录但是升级了11.4的朋友看的。通过这篇教程，你会制造出一个11.3的虚拟系统用来实现NTR的视频传输。完成教程后，你可以拥有一种方案：1，按住L开机进虚拟11.3系统、不按L进真实系统的一张sd卡；或者2，直接开虚拟11.3的副sd卡+和原来完全一样的主sd卡（也就是说你额外制作了一张NTR内录专用sd卡）。如图所示：</p>
 						<p><img src='images/picCN.png' align="middle"></p>
 						<div class="space"></div>
 						<div class="row">
@@ -195,13 +195,13 @@
 								<ul class="list-unstyled">
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. <code class="highlighter-rouge">boot.3dsx</code>、<code class="highlighter-rouge">arm9loaderhax.bin</code>和<code class="highlighter-rouge">luma</code>文件夹复制回sd卡根目录（如果没有的话），插回3ds按住START开机，选择EmuNAND9按A；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i>2. 进入EmuNAND9菜单后，选择Complete EmuNAND Setup按A，根据指示按下上左右，按A执行，耐心等待它完成；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 按几次B退回主菜单，选择EmuNAND Manager Options按A，选择Backup EmuNAND to file按A，然后按照指示按下上左右A，选择文件名为EmuNAND.bin，按A进行，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. 按左+START键关机，拔sd卡插电脑，把<code class="highlighter-rouge">EmuNAND.bin</code>复制到电脑里</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 解压guiformat.zip，打开guiformat.exe，将sd卡格式化为FAT32；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe，确认NAND Number是1， 和EmuNAND SD Card是你要制作虚拟系统的卡的路径，然后点inject EmuNAND，选中刚才复制出来的<code class="highlighter-rouge">EmuNAND.bin</code>，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 读完条后确认注入成功，如果不成功重做第6步；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 将之前备份的文件中<code class="highlighter-rouge">boot.3dsx</code>、<code class="highlighter-rouge">arm9loaderhax.bin</code>和<code class="highlighter-rouge">luma</code>文件夹复制回sd卡根目录；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>9. 将11.3.0-36[J|U|E]_ctrtransfer_n3ds.zip中<code class="highlighter-rouge">files9</code>文件夹复制到sd卡根目录，拔卡插回3ds；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 完成后按B，按SELECT，不关机直接拔出sd卡插电脑，打开sd卡右键属性，如果sd卡为FAT32，那么第五步就完成了，如果是FAT格式，那么继续；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. 按几次B退回主菜单，选择EmuNAND Manager Options按A，选择Backup EmuNAND to file按A，然后按照指示按下上左右A，选择文件名为EmuNAND.bin，按A进行，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 按左+START键关机，拔sd卡插电脑，把<code class="highlighter-rouge">EmuNAND.bin</code>复制到电脑里</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. 解压guiformat.zip，打开guiformat.exe，将sd卡格式化为FAT32；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe，确认NAND Number是1， 和EmuNAND SD Card是你要制作虚拟系统的卡的路径，然后点inject EmuNAND，选中刚才复制出来的<code class="highlighter-rouge">EmuNAND.bin</code>，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 读完条后确认注入成功，如果不成功重做第6步；</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -211,16 +211,18 @@
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. 按住START开机，进入Chainloader，选择Decrypt9WIP按A，进入Decrypt9WIP菜单；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>2. 选择EmuNAND Options按A，选择CTRNAND Transfer按A，选择Auto CTRNAND Transfer按A，确认有颜色的字是黄字且没有SysNAND字眼，然后按左右下上A，选择11.3.0-36[J|U|E]_ctrtransfer_n3ds.bin继续，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 成功后，按START重启，立刻按住SELECT键进入luma页面；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. 将之前备份的文件中<code class="highlighter-rouge">boot.3dsx</code>、<code class="highlighter-rouge">arm9loaderhax.bin</code>和<code class="highlighter-rouge">luma</code>文件夹复制回sd卡根目录；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>2. 将11.3.0-36[J|U|E]_ctrtransfer_n3ds.zip中<code class="highlighter-rouge">files9</code>文件夹复制到sd卡根目录，拔卡插回3ds；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 按住START开机，进入Chainloader，选择Decrypt9WIP按A，进入Decrypt9WIP菜单；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. 选择EmuNAND Options按A，选择CTRNAND Transfer按A，选择Auto CTRNAND Transfer按A，确认有颜色的字是黄字且没有SysNAND字眼，然后按左右下上A，选择11.3.0-36[J|U|E]_ctrtransfer_n3ds.bin继续，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 成功后，按START重启，立刻按住SELECT键进入luma页面；</li>
 									<p>勾选Autoboot SysNAND是自动进真实系统、按住L开机进虚拟系统。不勾就是按L进真实。所以副卡不勾，主卡看你喜好。</p>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. Default EmuNAND选1，选择New 3DS CPU为Clock+L2，勾选Use SysNAND FIRM if booting with R和show NAND or user string in System Settings；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 如果是勾了Autoboot SysNAND，按START保存luma后立刻按住L进虚拟系统，如果没勾的，按一下START即可；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. 进入系统后，点开本体设定，上屏右下角写着Emu 11.3.0-36[J|U|E]的，说明你成功安装了11.3虚拟系统，如果是Sys什么的，你需要再确认一下自己是否需要按L开机；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 确认进入虚拟系统后，点其它设定，到最右边点本体的初始化；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 初始化完后，设定好一堆名字生日之类的后，进入系统主页，这时候应该可以看到FBI，如果有FBI那么就可以跳到第七步了；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>9. 如果没有FBI，去搜索下载一个FBI.cia复制到sd卡里，按住START开机进Chainloader，选择Decrypt9WIP按A，选择EmuNAND Options按A，选择Miscellaneous按A，选择Health and Safety Inject按A，按左右下上A，选择FBI.cia注入；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. Default EmuNAND选1，选择New 3DS CPU为Clock+L2，勾选Use SysNAND FIRM if booting with R和show NAND or user string in System Settings；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 如果是勾了Autoboot SysNAND，按START保存luma后立刻按住L进虚拟系统，如果没勾的，按一下START即可；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 进入系统后，点开本体设定，上屏右下角写着Emu 11.3.0-36[J|U|E]的，说明你成功安装了11.3虚拟系统，如果是Sys什么的，你需要再确认一下自己是否需要按L开机；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>9. 确认进入虚拟系统后，点其它设定，到最右边点本体的初始化；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>10. 初始化完后，设定好一堆名字生日之类的后，进入系统主页，这时候应该可以看到FBI，如果有FBI那么就可以跳到第七步了；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>12. 如果没有FBI，去搜索下载一个FBI.cia复制到sd卡里，按住START开机进Chainloader，选择Decrypt9WIP按A，选择EmuNAND Options按A，选择Miscellaneous按A，选择Health and Safety Inject按A，按左右下上A，选择FBI.cia注入；</li>
 								
 								</ul>
 							</div>
