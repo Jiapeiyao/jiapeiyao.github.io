@@ -138,12 +138,14 @@
 						<p><img src='images/picCN.png' align="middle"></p>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>一，材料（二选一）</span></h2>
+							<h2 id="step1" class="title text-center"><span>一，准备</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 现在用着的sd卡，后面简称“主卡”，建议32G以上，安装很多游戏的话最好64G以上；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 或者多出的一张sd卡，后面简称“副卡”【强烈推荐使用这种，因为一般买机子时会自带一张4gb卡，a9后就没用了，这里可以废物利用一下。然后就是这种方法更快捷，用原卡要复制粘贴原来的东西，太麻烦】;</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 决定你要使用的方案： <p>(1) 方案1: 只需一张卡（后面简称主卡），如果安装许多下载版或者CIA的，需要很大容量，建议64GB；</p><p>(2) 方案2: 另外用一张sd卡（后面简称副卡）作专门内录卡，好处是不需要动原来的sd卡；</p></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 确认你的情况是否适合本教程：（1）你的3ds是A9lh破解吗？（2）你是在使用真实系统吗？你的游戏和软件是在真实系统时安装的吗？（3）你是否本来就已经有了虚拟系统？（在做a9lh后没有删除虚拟系统）</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 建议把所有游戏的savedata和exdata用sdf导出一遍；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 插好电源保持充电状态；</li>
 								</ul>
 							</div>
 						</div>
@@ -153,9 +155,10 @@
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Decrypt9WIP-20170225-132313.zip，或者到此网址下载最新版： <a href="https://github.com/d0k3/Decrypt9WIP/releases">https://github.com/d0k3/Decrypt9WIP/releases</a></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> <a href="https://github.com/d0k3/Decrypt9WIP/releases/download/20170225/Decrypt9WIP-20170225-132313.zip">Decrypt9WIP.zip</a>，或者到此网址下载最新版： <a href="https://github.com/d0k3/Decrypt9WIP/releases">https://github.com/d0k3/Decrypt9WIP/releases</a></li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3ds-multinand_v1.61.zip，链接: <a href="https://pan.baidu.com/s/1qYlVGFa">https://pan.baidu.com/s/1qYlVGFa</a> 密码: 57k4</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 11.3_J_EmuNAND.7z, （暂时只制作了日版）: <a href="https://pan.baidu.com/s/1o84qE5W">https://pan.baidu.com/s/1o84qE5W</a> 密码: c17e</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 11.3_J_EmuNAND.7z: <a href="https://pan.baidu.com/s/1o84qE5W">https://pan.baidu.com/s/1o84qE5W</a> 密码: c17e</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> <a href="https://github.com/d0k3/EmuNAND9/releases/download/20160919/EmuNAND9-20160919-134904.zip">EmuNAND9.zip</a>，或者到此网址下载最新版：<a href="https://github.com/d0k3/EmuNAND9/releases">https://github.com/d0k3/EmuNAND9/releases</a>
 								</ul>
 							</div>
 						</div>
@@ -165,16 +168,16 @@
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的<b>Decrypt9WIP.bin</b>>到sd卡中的luma/payloads/文件夹；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的<code class="highlighter-rouge">Decrypt9WIP.bin</code>和EmuNAND9.zip中的<code class="highlighter-rouge">EmuNAND9.bin</code>，到sd卡中的<code class="highlighter-rouge">luma/payloads/</code>文件夹；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. sd卡插回3ds，按住START开机，进入Chainloader，选择Decrypt9WIP按A进入</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 进入Decrypt9WIP后，选择Ticket/Titlekey Options按A进入；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 选择Ticket Dump (SysNAND)按A，然后等待它完成，按电源键关机; </li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 选择Ticket Dump (SysNAND)按A，然后等待它完成; </li>
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>四，重要！备份主卡文件（做副卡虚拟系统的可跳过）</span></h2>
+							<h2 id="step1" class="title text-center"><span>四，重要！备份主卡文件</span></h2>
 							<div class="col-md-12">
 								<p></p>
 								<ul class="list-unstyled">
@@ -185,38 +188,59 @@
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>五，注入虚拟系统</span></h2>
+							<h2 id="step1" class="title text-center"><span>五，克隆11.4虚拟系统</span></h2>
 							<div class="col-md-12">
-								<p></p>
+								<p>注意：从这一步开始，你要对制作虚拟系统的sd卡进行操作，如果是选择方案2，这后面都是用的副卡</p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将要制作虚拟系统的sd卡插到电脑（另一张卡建议拔出）；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 点inject emuNAND，选中第二步里下载的11.3_J_EmuNAND.7z中的11.3_J_EmuNAND.bin，等待读条；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 读条完毕成功后，将主卡或主卡备份中的<b>3ds</b>文件夹，<b>luma</b>文件夹，<b>arm9loaderhax.bin</b>， <b>boot.3dsx</b>，全部复制到根目录，拔sd卡插回3ds；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 5. 如果是想要开机默认虚拟系统，开机按住SELECT，将Autoboot SysNAND取消勾选，然后按START保存;</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 6. 打开虚拟系统，打开系统设置（右下角会写着Emu 11.3...），点右下的其它设定，点最右边的本体初始化，初始化虚拟系统；</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 7. 如果是使用了主卡做虚拟系统，就将前面备份的东西全部复制到主卡上；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. 按住START开机，选择EmuNAND按A；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>2. 进入EmuNAND菜单后，选择Complete EmuNAND Setup按A，根据指示按下上左右，按A执行，耐心等待它完成；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 按几次B退回主菜单，选择EmuNAND Manager Options按A，选择Backup EmuNAND to file按A，然后按照指示按下上左右A，选择文件名为EmuNAND.bin，按A进行；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. 按左+START键关机，拔sd卡插电脑，把<code class="highlighter-rouge">EmuNAND.bin</code>复制到电脑里</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 解压guiformat.zip，打开guiformat.exe，将sd卡格式化为FAT32；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe，确认NAND Number是1， 和EmuNAND SD Card是你要制作虚拟系统的卡的路径，然后点inject EmuNAND，选中刚才复制出来的<code class="highlighter-rouge">EmuNAND.bin</code>，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 读完条后确认注入成功，如果不成功重做第6步；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 将之前备份的文件中<code class="highlighter-rouge">boot.3dsx</code>、<code class="highlighter-rouge">arm9loaderhax.bin</code>和<code class="highlighter-rouge">luma</code>文件夹复制回sd卡根目录；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>9. 将11.3.0-36[J|U|E]_ctrtransfer_n3ds.zip中<code class="highlighter-rouge">files9</code>文件夹复制到sd卡根目录，拔卡插回3ds；</li>
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>六，还原ticket</span></h2>
+							<h2 id="step1" class="title text-center"><span>六，传输11.3系统到虚拟系统中</span></h2>
 							<div class="col-md-12">
-								<p>如果虚拟系统需要还原原来装过的一堆软件和游戏的话，就做这一环节。（如果是使用小容量副卡就不需要这一步了，建议只装自己需要的软件和游戏）</p>
+								<p></p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将主卡的备份中的Nintendo 3ds文件复制回sd卡根目录</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 开机后打开主页的FBI</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 选择SD卡按A，可以看见一堆*.tik文件；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>1. 按住START开机，进入Chainloader，选择Decrypt9WIP按A，进入Decrypt9WIP菜单；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>2. 选择EmuNAND Options按A，选择CTRNAND Transfer按A，选择Auto CTRNAND Transfer按A，确认有颜色的字是黄字且没有SysNAND字眼，然后按左右下上A，选择11.3.0-36[J|U|E]_ctrtransfer_n3ds.bin继续，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>3. 成功后，START关机，立刻按住SELECT键进入luma页面；</li>
+									<p>勾选Autoboot SysNAND是自动进真实系统、按住L开机进虚拟系统。不勾就是按L进真实。所以副卡不勾，主卡看你喜好。</p>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>4. Default EmuNAND选1，选择New 3DS CPU为Clock+L2，勾选Use SysNAND FIRM if booting with R和show NAND or user string in System Settings；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>5. 如果是勾了Autoboot SysNAND，按START保存luma后立刻按住L进虚拟系统，如果没勾的，按一下START即可；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>6. 进入系统后，点开本体设定，上屏右下角写着Emu 11.3.0-36[J|U|E]的，说明你成功安装了11.3虚拟系统，如果是Sys什么的，你需要再确认一下自己是否需要按L开机；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>7. 确认进入虚拟系统后，点其它设定，到最右边点本体的初始化；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>8. 初始化完后，设定好一堆名字生日之类的后，进入系统主页，这时候应该可以看到FBI，如果有FBI那么就可以跳到第七步了；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i>9. 如果没有FBI，去搜索下载一个FBI.cia复制到sd卡里，按住START开机进Chainloader，选择Decrypt9WIP按A，选择EmuNAND Options按A，选择Miscellaneous按A，选择Health and Safety Inject按A，按左右下上A，选择FBI.cia注入；</li>
+								
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>七，还原ticket</span></h2>
+							<div class="col-md-12">
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将主卡的备份中的所有文件和文件夹复制回主卡根目录；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 如果是方案1，打开虚拟系统，打开主页的FBI；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 选择SD卡按A，可以看见一堆<code class="highlighter-rouge">*.tik</code>文件；</li>
 									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 按Y，选择Install and delete all tickets，按A确定安装，然后按B取消从CDN安装titles；</li>
 								</ul>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="row">
-							<h2 id="step1" class="title text-center"><span>七，完成！收尾</span></h2>
+							<h2 id="step1" class="title text-center"><span>八，完成！收尾</span></h2>
 							<div class="col-md-12">
-								<p>恭喜你已经成功制作了11.3的虚拟系统，接下来你可以安装用FBI安装DevMenu.cia和SaveDataFile.cia，可以安装NTR和游戏，导入存档。然后，你可以安装NTRSelector.cia或者用你的老办法来运行NTR内录。</p>
+								<p>恭喜你已经成功制作了11.3的虚拟系统，接下来你可以安装用FBI安装DevMenu.cia、SaveDataFile.cia和游戏，导入存档(如果没有的话)。然后，你可以安装NTRSelector.cia或者用你的老办法来运行NTR内录了。</p>
 								<p>祝大家游戏愉快！</p>
 								<p>转载请注明作者和出处。</p>
 							</div>

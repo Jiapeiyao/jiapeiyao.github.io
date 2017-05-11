@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>EmuNTR 11.3</title>
+		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="css/animations.css" rel="stylesheet">
+
+		<!-- Worthy core CSS file -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+
+	<body class="no-trans">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start -->
+		<!-- ================ --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start -->
+						<!-- ================ -->
+						<div class="header-left clearfix">
+
+
+							<!-- name-and-slogan -->
+							<div class="site-name-and-slogan smooth-scroll">
+								<div class="site-name">EmuNTR 11.3</div>
+								<div class="site-slogan">by Jiapei Yao (MH: Mononoke) </div>
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start -->
+						<!-- ================ -->
+						<div class="header-right clearfix">
+
+							<!-- main-navigation start -->
+							<!-- ================ -->
+							<div class="main-navigation animated">
+
+								<!-- navbar start -->
+								<!-- ================ -->
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li><a href="EmuNTR.html">中文版</a></li>
+												<li><a href="https://github.com/Jiapeiyao">Back to Github</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- banner start -->
+		<!-- ================ -->
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<h1 class="text-center">The Renaissance of EmuNAND<span>Good News to the Users of the NTR Streaming</span></h1>
+							<p class="lead text-center">Tutorial of making a 11.3 EmuNAND to implememt NTR streaming, as long as using new updated SysNAND</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+
+		<!-- section start -->
+		<!-- ================ -->
+		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 id="about" class="title text-center"><span>前言</span></h1>
+						<p class="lead text-center">If you find this tutorial, you probably are a A9lh and NTR streaming user who has updated the 3ds system to 11.4, which is not able to run NTR streaming. This tutorial will guide you to create a 11.3 EmuNAND for the NTR streaming. You have 2 options: first, you can use one card for both daily online game and booting EmuNAND while holding L to use NTR streaming; or second, you can .：</p>
+						<p><img src='images/picCN.png' align="middle"></p>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>一，材料（二选一）</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 现在用着的sd卡，后面简称“主卡”，建议32G以上，安装很多游戏的话最好64G以上；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 或者多出的一张sd卡，后面简称“副卡”【强烈推荐不经常使用内录的这种方法。就是这种方法更快捷，用原卡要复制粘贴原来的东西，太麻烦。缺点是以后录游戏的时候得导出导入存档】;</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>二，下载需要的文件</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Decrypt9WIP-20170225-132313.zip，或者到此网址下载最新版： <a href="https://github.com/d0k3/Decrypt9WIP/releases">https://github.com/d0k3/Decrypt9WIP/releases</a></li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3ds-multinand_v1.61.zip，链接: <a href="https://pan.baidu.com/s/1qYlVGFa">https://pan.baidu.com/s/1qYlVGFa</a> 密码: 57k4</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 11.3_J_EmuNAND.7z, （暂时只制作了日版）: <a href="https://pan.baidu.com/s/1o84qE5W">https://pan.baidu.com/s/1o84qE5W</a> 密码: c17e</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>三，备份Ticket</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. sd卡插电脑或着Wi-Fi传输，复制Decrypt9WIP.zip中的<b>Decrypt9WIP.bin</b>>到sd卡中的luma/payloads/文件夹；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. sd卡插回3ds，按住START开机，进入Chainloader，选择Decrypt9WIP按A进入</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 进入Decrypt9WIP后，选择Ticket/Titlekey Options按A进入；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 选择Ticket Dump (SysNAND)按A，然后等待它完成，按电源键关机; </li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>四，重要！备份主卡文件（做副卡虚拟系统的可跳过）</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 取出sd卡插入电脑（不建议使用wifi传输）；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 将sd卡所有内容复制到电脑里保管好。（为了防止有疏漏的文件，建议先将系统的不显示隐藏文件选项给关掉）；</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>五，注入虚拟系统</span></h2>
+							<div class="col-md-12">
+								<p></p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将要制作虚拟系统的sd卡插到电脑（另一张卡建议拔出）；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 解压3ds-multinand_v1.61.zip，打开3ds-multinand.exe（如果你的卡不是FAT32）；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 点inject emuNAND，选中第二步里下载的11.3_J_EmuNAND.7z中的11.3_J_EmuNAND.bin，等待读条；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 读条完毕成功后，将主卡或主卡备份中的<b>3ds</b>文件夹，<b>luma</b>文件夹，<b>arm9loaderhax.bin</b>， <b>boot.3dsx</b>，全部复制到根目录，拔sd卡插回3ds；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 5. 如果是想要开机默认虚拟系统，开机按住SELECT，将Autoboot SysNAND取消勾选，然后按START保存;</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 6. 打开虚拟系统，打开系统设置（右下角会写着Emu 11.3...），点右下的其它设定，点最右边的本体初始化，初始化虚拟系统；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 7. 如果是使用了主卡做虚拟系统，就将前面备份的东西全部复制到主卡上；</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>六，还原ticket</span></h2>
+							<div class="col-md-12">
+								<p>如果虚拟系统需要还原原来装过的一堆软件和游戏的话，就做这一环节。（如果是使用小容量副卡就不需要这一步了，建议只装自己需要的软件和游戏）</p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 1. 将主卡的备份中的Nintendo 3ds文件复制回sd卡根目录</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 2. 开机后打开主页的FBI</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 3. 选择SD卡按A，可以看见一堆*.tik文件；</li>
+									<li><i class="fa fa-caret-right pr-10 text-colored"></i> 4. 按Y，选择Install and delete all tickets，按A确定安装，然后按B取消从CDN安装titles；</li>
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<h2 id="step1" class="title text-center"><span>七，完成！收尾</span></h2>
+							<div class="col-md-12">
+								<p>恭喜你已经成功制作了11.3的虚拟系统，接下来你可以安装用FBI安装DevMenu.cia和SaveDataFile.cia，可以安装NTR和游戏，导入存档。然后，你可以安装NTRSelector.cia或者用你的老办法来运行NTR内录。</p>
+								<p>祝大家游戏愉快！</p>
+								<p>转载请注明作者和出处。</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section end -->
+
+
+
+
+			<!-- .subfooter start -->
+			<!-- ================ -->
+			<!--
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<!-- .subfooter end -->
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
+</html>
