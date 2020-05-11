@@ -2,6 +2,6 @@
 
 http://jiapeiyao.github.io/
 
-# Tutorial of Installing Emulator System in 3DS console
+# Antd preview
 
-http://jiapeiyao.github.io/EmuNTR.html
+http://jiapeiyao.github.io/antd-preview/
